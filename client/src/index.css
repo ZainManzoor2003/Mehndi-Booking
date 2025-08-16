@@ -1,0 +1,17 @@
+/* Minimal reset and sensible defaults for the app */
+* { box-sizing: border-box; }
+*:before, *:after { box-sizing: inherit; }
+
+html, body, #root { height: 100%; margin: 0;
+  padding: 0;}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: hsl(0, 0%, 17%);
+  background: #fdeedc;
+  overflow-x: hidden;
+}
+
+a { color: inherit; }
+
+#root { display: contents; }
