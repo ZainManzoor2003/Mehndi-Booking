@@ -116,8 +116,10 @@
 .choose-login-link:hover { text-decoration: underline; }
 
 @media (max-width: 840px) {
-  .choose-title { font-size: 40px; }
+  .choose-title { font-size: 30px; }
   .choose-cards { grid-template-columns: 1fr; }
+  .choose-card-title { font-size: 24px; }
+  .choose-card-desc{font-size: 16px;}
 }
 
 
