@@ -1,7 +1,7 @@
 .how-root {
     padding: 16px 12px 40px;
     background: #f7e8d7;
-    width: 900px;
+    width: min(900px, 92vw);
 }
 
 .panel-subtitle {
@@ -14,7 +14,7 @@
     /* margin: 0; */
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
     /* height: 100vh; */
 }
 .step1,.step2{
@@ -23,11 +23,11 @@
     justify-content: space-between;
 }
 .step-1{
-    margin-left: 10px;
+    margin-left: 5%;
 }
 .step-2{
     margin-right: 10px;
-    margin-top: 20%;
+    margin-top: 10%;
 
 }
 
@@ -35,13 +35,13 @@
     margin-left: 10%;
 }
 .step-4{
-    margin-right: 30px;
-    margin-top: 30%;
+    margin-right: 40px;
+    margin-top: 20%;
 }
 
 .step-card {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     background: #faf4ec;
     border-radius: 50%;
     border: 2px solid #d7b189;
@@ -84,4 +84,34 @@
 /* Positions: 1 left, 2 right, 3 center-left, 4 center-right */
 
 
-@media (max-width: 980px) {}
+/* Breakpoints to reduce circle and text sizes */
+@media (max-width: 1080px) {
+    .how-root { width: min(860px, 92vw); }
+    .step-card { width: 260px; height: 260px; }
+    .step-title { font-size: 20px; }
+    .step-desc { font-size: 14px; }
+}
+
+@media (max-width: 900px) {
+    .step-card { width: 230px; height: 230px; }
+    .step-badge { width: 42px; height: 42px; line-height: 42px; }
+    .step-icon { font-size: 24px; }
+}
+
+@media (max-width: 768px) {
+    .step1, .step2 { gap: 12px; }
+    .step-card { width: 250px; height: 250px; padding: 8px; }
+    .step-title { font-size: 18px; }
+    .step-desc { font-size: 13px; max-width: 180px; }
+    .step-2 { margin-top: 10%; }
+    .step-4 { margin-top: 14%; }
+}
+
+@media (max-width: 560px) {
+    .how-root { width: 100%; padding: 12px 8px 24px; }
+    .steps { margin-top: 36px; gap: 10px; }
+    .step1, .step2 { flex-direction: column; align-items: center; }
+    .step-card { width: 86vw; height: auto; border-radius: 24px; margin: 0; }
+    .step-badge { position: static; margin-bottom: 8px; }
+    .step-2, .step-4 { margin-top: 0; }
+}

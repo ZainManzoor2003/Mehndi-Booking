@@ -3,6 +3,7 @@
     background: #f6eadc;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .tabs-switch {
@@ -14,6 +15,7 @@
     display: inline-flex;
     padding: 8px;
     gap: 8px;
+    max-width: 1000px;
 }
 
 .tabs-btn {
@@ -65,4 +67,21 @@
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* Responsive tabs */
+@media (max-width: 1080px) {
+  .tabs-switch { width: 70vw; }
+}
+
+@media (max-width: 768px) {
+  .tabs-switch { width: 88vw; padding: 6px; }
+  .tabs-btn { padding: 10px 16px; font-size: 14px; }
+  .tabs-root { padding: 16px 12px 28px; }
+  .tabs-content { max-width: 92vw; }
+}
+
+@media (max-width: 480px) {
+  .tabs-btn { padding: 8px 12px; font-size: 13px; border-radius: 28px; }
+  .tabs-switch { border-radius: 32px; }
 }
