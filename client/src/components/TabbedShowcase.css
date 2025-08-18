@@ -1,9 +1,8 @@
 .tabs-root {
     padding: 24px 16px 40px;
-    background: #f6eadc;
+    background: white;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
 }
 
 .tabs-switch {

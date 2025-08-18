@@ -5,6 +5,7 @@ import CategoryCarousel from './components/CategoryCarousel.jsx'
 import TabbedShowcase from './components/TabbedShowcase.jsx'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
+import AboutUs from './components/AboutUs.jsx'
 import Footer from './components/Footer.jsx'
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
           element={
             <>
               <Hero onRequestArtist={goGetStarted}  />
+              <AboutUs />
               <TabbedShowcase />
-              <CategoryCarousel/>
             </>
           }
         />
