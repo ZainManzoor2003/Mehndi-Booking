@@ -26,6 +26,7 @@
   font-size: 22px;
   color: #875026;
   letter-spacing: 0.02em;
+  margin-left: 8%;
 }
 
 .actions { display: flex; gap: 10px; align-items: center; }
@@ -114,6 +115,42 @@
 @media (max-width: 720px) {
   .menu-list { flex-direction: column; gap: 6px; }
   .actions { gap: 8px; }
+}
+
+@media (max-width: 460px) {
+  .mm-header-inner {
+    padding: 12px 12px;
+    gap: 8px;
+  }
+  
+  .brand {
+    font-size: 18px;
+    margin-left: 4%;
+    flex-shrink: 0;
+  }
+  
+  .actions {
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  
+  .btn {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+  
+  .burger {
+    width: 32px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  
+  .burger .line {
+    width: 22px;
+  }
+  
+  .burger .line1 { transform: translateY(-6px); }
+  .burger .line3 { transform: translateY(6px); }
 }
 
 /* when header has class .open, reveal overlay to allow GSAP to measure items */

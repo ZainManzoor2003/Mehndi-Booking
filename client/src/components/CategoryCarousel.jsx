@@ -2,11 +2,11 @@ import { useState, useMemo, useCallback } from 'react'
 import './CategoryCarousel.css'
 
 const categories = [
-  { id: 1, title: 'Bridal Mehndi', image: 'https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg' },
-  { id: 2, title: 'Arabic Mehndi', image: 'https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg' },
-  { id: 3, title: 'Indo-Arabic', image: 'https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg' },
-  { id: 4, title: 'Traditional', image: 'https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg' },
-  { id: 5, title: 'Contemporary', image: 'https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg' },
+  { id: 1, title: 'Bridal Mehndi', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV40G548N2ZNPSZIZgHcFvOqu8tGXsGK-LLA&s' },
+  { id: 2, title: 'Arabic Mehndi', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV40G548N2ZNPSZIZgHcFvOqu8tGXsGK-LLA&s' },
+  { id: 3, title: 'Indo-Arabic', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV40G548N2ZNPSZIZgHcFvOqu8tGXsGK-LLA&s' },
+  { id: 4, title: 'Traditional', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV40G548N2ZNPSZIZgHcFvOqu8tGXsGK-LLA&s' },
+  { id: 5, title: 'Contemporary', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV40G548N2ZNPSZIZgHcFvOqu8tGXsGK-LLA&s' },
 ]
 
 function CategoryCarousel() {

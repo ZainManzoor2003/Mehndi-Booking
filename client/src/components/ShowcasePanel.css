@@ -1,7 +1,7 @@
 .how-root {
     padding: 16px 12px 40px;
     background: #f7e8d7;
-    width: min(900px, 92vw);
+    width: min(800px, 85vw);
 }
 
 .panel-subtitle {
@@ -35,13 +35,13 @@
     margin-left: 10%;
 }
 .step-4{
-    margin-right: 40px;
+    margin-right: 10%;
     margin-top: 20%;
 }
 
 .step-card {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     background: #faf4ec;
     border-radius: 50%;
     border: 2px solid #d7b189;
@@ -74,6 +74,7 @@
     margin: 0 0 6px;
     color: #6b3917;
     padding: 0px 5px;
+    font-size: 14px;
 }
 
 .step-desc {

@@ -7,7 +7,7 @@
 }
 
 .tabs-switch {
-    width: 50vw;
+    width: 40vw;
     margin: 0 auto 18px;
     background: #fff;
     border-radius: 48px;
@@ -40,7 +40,7 @@
 }
 
 .tabs-btn.active {
-    background: linear-gradient(90deg, #e87722 0%, #c65a15 50%, #8b3f11 100%);;
+    background: linear-gradient(90deg, #e87722 0%, #c65a15 50%, #8b3f11 100%);
     color: #fff;
 }
 

@@ -21,6 +21,7 @@ function App() {
             <>
               <Hero onRequestArtist={goGetStarted}  />
               <TabbedShowcase />
+              <CategoryCarousel/>
             </>
           }
         />
