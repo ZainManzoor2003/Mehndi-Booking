@@ -40,8 +40,8 @@
 }
 
 .step-card {
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
     background: #faf4ec;
     border-radius: 50%;
     border: 2px solid #d7b189;
@@ -66,19 +66,21 @@
 }
 
 .step-icon {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .step-title {
     margin: 0 0 6px;
     color: #6b3917;
+    padding: 0px 5px;
 }
 
 .step-desc {
     margin: 0;
     color: #7e5a3c;
-    max-width: 240px;
+    font-size: 15px;
+    padding: 0px 5px;
 }
 
 /* Positions: 1 left, 2 right, 3 center-left, 4 center-right */
@@ -87,7 +89,6 @@
 /* Breakpoints to reduce circle and text sizes */
 @media (max-width: 1080px) {
     .how-root { width: min(860px, 92vw); }
-    .step-card { width: 260px; height: 260px; }
     .step-title { font-size: 20px; }
     .step-desc { font-size: 14px; }
 }

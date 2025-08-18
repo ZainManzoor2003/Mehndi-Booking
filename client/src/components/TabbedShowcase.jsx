@@ -5,36 +5,36 @@ import ShowcasePanel from './ShowcasePanel.jsx'
 function TabbedShowcase() {
   const [activeTab, setActiveTab] = useState('clients');
   const client1 = [
-    { id: 1, title: 'Post Your Request', desc: 'Tell us the date, location, style, and coverage.' },
-    { id: 2, title: 'Receive Offers', desc: 'Artists send tailored proposals with pricing ranges.' }
+    { id: 1, title: 'Post Your Booking', desc: 'Date, style, budget, location.' },
+    { id: 2, title: 'Artists Come to You', desc: 'No chasing, no ghosting.' }
   ]
   const client2 = [
-    { id: 3, title: 'Compare & Chat', desc: 'View portfolios, message artists, and refine details.' },
-    { id: 4, title: 'Book Securely', desc: 'Confirm the artist you love and pay safely.' },
+    { id: 3, title: 'Chat & Compare', desc: 'Portfolios and offers in one place.' },
+    { id: 4, title: 'Your Mehndi Me Moment', desc: 'From first click to final stain, stress-free.' },
   ]
 
   const artist1 = [
     {
       id: 1,
       title: 'Create Your Profile',
-      desc: 'Add styles, coverage, portfolio, and pricing ranges.',
+      desc: 'Show off your best work.',
     },
     {
       id: 2,
-      title: 'Discover Requests',
-      desc: 'Find bookings matched to your style and location.',
+      title: 'See Real Bookings',
+      desc: 'Browse jobs near you.',
     }
   ]
   const artist2= [
     {
       id: 3,
-      title: 'Send Offers',
-      desc: 'Share availability, approach, and price range.',
+      title: 'Send Your  Offers',
+      desc: 'Price and portfolio in seconds',
     },
     {
       id: 4,
-      title: 'Get Hired & Paid',
-      desc: 'Get confirmed, complete the job, and receive payment.',
+      title: 'Booked, Done, Paid',
+      desc: 'You create, we handle the rest',
     }
   ]
 

@@ -2,11 +2,11 @@ import { useState, useMemo, useCallback } from 'react'
 import './CategoryCarousel.css'
 
 const categories = [
-  { id: 1, title: 'Bridal Mehndi', image: 'https://www.thesparklingwedding.com/wp-content/uploads/2024/09/cover_02.jpg' },
-  { id: 2, title: 'Arabic Mehndi', image: 'https://www.thesparklingwedding.com/wp-content/uploads/2024/09/cover_02.jpg' },
-  { id: 3, title: 'Indo-Arabic', image: 'https://www.thesparklingwedding.com/wp-content/uploads/2024/09/cover_02.jpg' },
-  { id: 4, title: 'Traditional', image: 'https://www.thesparklingwedding.com/wp-content/uploads/2024/09/cover_02.jpg' },
-  { id: 5, title: 'Contemporary', image: 'https://www.thesparklingwedding.com/wp-content/uploads/2024/09/cover_02.jpg' },
+  { id: 1, title: 'Bridal Mehndi', image: 'https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg' },
+  { id: 2, title: 'Arabic Mehndi', image: 'https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg' },
+  { id: 3, title: 'Indo-Arabic', image: 'https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg' },
+  { id: 4, title: 'Traditional', image: 'https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg' },
+  { id: 5, title: 'Contemporary', image: 'https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg' },
 ]
 
 function CategoryCarousel() {

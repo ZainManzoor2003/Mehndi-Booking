@@ -95,11 +95,10 @@
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
-  transition: background-color 200ms ease, transform 200ms ease, filter 200ms ease, box-shadow 200ms ease;
+  background: linear-gradient(90deg, #e87722 0%, #c65a15 50%, #8b3f11 100%);;
 }
 
-.choose-button:hover { filter: brightness(1.05); background-color: #a24d12; }
-.choose-button:active { transform: translateY(1px); box-shadow: 0 5px 0 #6e2f05; }
+.choose-button:hover { filter: brightness(1.04); background-color: #a24d12; }
 
 .choose-login {
   margin-top: 22px;

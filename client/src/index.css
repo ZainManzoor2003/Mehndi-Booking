@@ -15,3 +15,6 @@ body {
 a { color: inherit; }
 
 #root { display: contents; }
+
+/* Locomotive requires the container to be positioned */
+[data-scroll-container] { position: relative; }

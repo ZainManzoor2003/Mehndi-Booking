@@ -1,0 +1,126 @@
+.mm-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  backdrop-filter: saturate(140%) blur(6px);
+}
+
+/* seamless with banner: use translucent background that blends */
+.mm-header:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(253, 238, 220, 0.6);
+}
+
+.mm-header-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+}
+
+.brand {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: #875026;
+  letter-spacing: 0.02em;
+}
+
+.actions { display: flex; gap: 10px; align-items: center; }
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn.ghost { background: transparent; color: #7a4a23; border-color: #cfa37f; }
+
+/* burnt orange to deep brown gradient transition */
+.btn.cta {
+  background: linear-gradient(90deg, #e87722 0%, #c65a15 50%, #9a4813 100%);
+  color: #fff;
+  transition: filter 200ms ease, transform 200ms ease;
+}
+.btn.cta:hover { filter: brightness(1.05); }
+.btn.cta:active { transform: translateY(1px); }
+
+/* Burger → Henna animation */
+.burger {
+  position: relative;
+  width: 36px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.burger .line {
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #7a4a23;
+  transition: transform 260ms ease, opacity 220ms ease;
+}
+.burger .line1 { transform: translateY(-7px); }
+.burger .line2 { transform: translateY(0); }
+.burger .line3 { transform: translateY(7px); }
+
+.burger .henna { position: absolute; inset: 0; display: grid; place-items: center; }
+.burger .petal {
+  position: absolute;
+  width: 8px; height: 12px;
+  border: 2px solid #7a4a23;
+  border-top-left-radius: 10px; border-top-right-radius: 10px;
+  border-bottom: none;
+  opacity: 0; transform: scale(0.4) translateY(8px);
+  transition: opacity 240ms ease, transform 280ms ease;
+}
+.burger .p1 { transform: rotate(0deg) translateY(-2px) scale(0.4); }
+.burger .p2 { transform: rotate(90deg) translateY(-2px) scale(0.4); }
+.burger .p3 { transform: rotate(180deg) translateY(-2px) scale(0.4); }
+.burger .p4 { transform: rotate(270deg) translateY(-2px) scale(0.4); }
+.burger .center-dot { width: 6px; height: 6px; background: #7a4a23; border-radius: 50%; opacity: 0; transition: opacity 220ms ease; }
+
+.burger.open .line1 { transform: rotate(45deg); }
+.burger.open .line2 { opacity: 0; }
+.burger.open .line3 { transform: rotate(-45deg); }
+.burger.open .petal { opacity: 1; transform: none; }
+.burger.open .center-dot { opacity: 1; }
+
+.menu-overlay {
+  position: absolute;
+  top: 100%; left: 0; right: 0;
+  background: rgba(253, 238, 220, 0.95);
+  border-bottom: 1px solid #eed5bd;
+  padding: 0 18px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 240ms ease, opacity 200ms ease, padding 200ms ease;
+}
+
+.menu-list { list-style: none; padding: 0; margin: 0; display: flex; gap: 16px; }
+.menu-link { background: transparent; border: none; color: #7a4a23; font-weight: 600; padding: 10px 12px; border-radius: 12px; cursor: pointer; }
+.menu-link:hover { background: #f7e5cf; }
+
+@media (max-width: 720px) {
+  .menu-list { flex-direction: column; gap: 6px; }
+  .actions { gap: 8px; }
+}
+
+/* when header has class .open, reveal overlay to allow GSAP to measure items */
+.mm-header.open .menu-overlay {
+  padding: 10px 18px 16px;
+  max-height: 220px;
+  opacity: 1;
+}
+
+

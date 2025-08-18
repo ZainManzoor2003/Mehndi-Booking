@@ -28,7 +28,6 @@
     font-weight: 800;
     color: #7a4a24;
     cursor: pointer;
-    transition: background-color 180ms ease, color 180ms ease, transform 120ms ease;
 }
 
 .tabs-btn .tabs-dot {
@@ -41,7 +40,7 @@
 }
 
 .tabs-btn.active {
-    background: #e07a21;
+    background: linear-gradient(90deg, #e87722 0%, #c65a15 50%, #8b3f11 100%);;
     color: #fff;
 }
 

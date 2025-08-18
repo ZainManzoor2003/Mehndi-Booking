@@ -13,7 +13,7 @@ function ShowcasePanel({ title, data1, data2 }) {
         <div className="step1">
 
           {data1.map((step, idx) => (
-            <div key={step.id} className={`step-card step-${step.id}`}>
+            <div data-aos="zoom-in" key={step.id} className={`step-card step-${step.id}`}>
               <span className="step-badge">{step.id}</span>
               <div className="step-icon" aria-hidden="true">🧡</div>
               <h3 className="step-title">{step.title}</h3>
@@ -23,7 +23,7 @@ function ShowcasePanel({ title, data1, data2 }) {
         </div>
         <div className="step2">
           {data2.map((step) => (
-            <div key={step.id} className={`step-card step-${step.id}`}>
+            <div data-aos="zoom-in" key={step.id} className={`step-card step-${step.id}`}>
               <span className="step-badge">{step.id}</span>
               <div className="step-icon" aria-hidden="true">🧡</div>
               <h3 className="step-title">{step.title}</h3>
