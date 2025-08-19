@@ -6,6 +6,7 @@ import TabbedShowcase from './components/TabbedShowcase.jsx'
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import AboutUs from './components/AboutUs.jsx'
+import VideoSection from './components/VideoSection.jsx'
 import Footer from './components/Footer.jsx'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <>
               <Hero onRequestArtist={goGetStarted}  />
               <AboutUs />
+              <VideoSection />
               <TabbedShowcase />
             </>
           }

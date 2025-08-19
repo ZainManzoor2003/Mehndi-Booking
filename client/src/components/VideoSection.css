@@ -1,0 +1,218 @@
+.video-root {
+  position: relative;
+  background: linear-gradient(90deg, #f0f4f8 0%, #ffffff 100%);
+  padding: 80px 0;
+}
+
+.video-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.video-content {
+  text-align: left;
+  margin-bottom: 60px;
+  max-width: 800px;
+}
+
+.video-title {
+  margin: 0 0 24px 0;
+  font-weight: 800;
+  font-size: 42px;
+  color: #2c3e50;
+  line-height: 1.2;
+  animation: slideInFromTop 0.6s ease-out;
+}
+
+.video-description {
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  animation: slideInFromTop 0.5s ease-out 0.2s both;
+}
+
+.video-player-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: slideInFromTop 0.7s ease-out 0.3s both;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(135deg, #fdeedc 0%, #f8d4b0 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.play-button {
+  width: 80px;
+  height: 80px;
+  background: #2c3e50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.3);
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  background: #34495e;
+  box-shadow: 0 12px 32px rgba(44, 62, 80, 0.4);
+}
+
+.play-button svg {
+  color: white;
+  margin-left: 4px;
+}
+
+.video-text {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.video-text span {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.video-text small {
+  font-size: 16px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.video-element {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .video-title {
+    font-size: 36px;
+  }
+  
+  .video-description {
+    font-size: 16px;
+  }
+  
+  .video-placeholder,
+  .video-element {
+    height: 400px;
+  }
+}
+
+@media (max-width: 840px) {
+  .video-root {
+    padding: 60px 0;
+  }
+  
+  .video-content {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .video-title {
+    font-size: 32px;
+  }
+  
+  .video-description {
+    font-size: 15px;
+  }
+  
+  .video-placeholder,
+  .video-element {
+    height: 350px;
+  }
+  
+  .play-button {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .play-button svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-title {
+    font-size: 28px;
+  }
+  
+  .video-description {
+    font-size: 14px;
+  }
+  
+  .video-placeholder,
+  .video-element {
+    height: 280px;
+  }
+  
+  .play-button {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .play-button svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .video-text span {
+    font-size: 20px;
+  }
+  
+  .video-text small {
+    font-size: 14px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

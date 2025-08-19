@@ -22,7 +22,6 @@
 }
 
 .brand {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 22px;
   color: #875026;
   letter-spacing: 0.02em;
@@ -99,8 +98,6 @@
 .menu-overlay {
   position: absolute;
   top: 100%; left: 0; right: 0;
-  background: rgba(253, 238, 220, 0.95);
-  border-bottom: 1px solid #eed5bd;
   padding: 0 18px;
   overflow: hidden;
   max-height: 0;

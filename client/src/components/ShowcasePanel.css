@@ -1,6 +1,6 @@
 .how-root {
     padding: 16px 12px 40px;
-    background: #faf6f0;
+    background: linear-gradient(48deg, #fdeedc 50%, #f8d4b0 50%);
     width: min(800px, 85vw);
 }
 
